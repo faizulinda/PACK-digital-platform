@@ -585,6 +585,8 @@ Manifest updated: /Users/tserentserenov/IWE/PACK-digital-platform/pack/digital-p
 | DP.M.328 | Yaml Preload Pure Bash Lookup | M | — | draft |
 | DP.M.329 | Идемпотентность вебхука на уровне ограничения БД (ON CONFLICT DO NOTHING) | M | — | active |
 | DP.M.331 | Agent Audit Trail as Append-only Sidecar | M | Машиночитаемый журнал действий агента хранится как отдельный append-only файл (audit-<id>.jsonl) рядом с человекочитаемым тредом сессии. Записывает события, которых нет в треде: вызовы инструментов, чтение/запись файлов, коммиты. Включается в коммит хода → переживает git reset --hard. | — |
+| DP.M.332 | SSG-гибрид: pre-render React SPA лендинга при сборке без фреймворка | M | Скрипт после vite build рендерит лендинг через renderToString и вшивает HTML в dist/index.html; React вызывает hydrateRoot. Краулеры без JavaScript видят текст. | draft |
+| DP.M.333 | Consistency-тест: идемпотентное переприменение | M | Повторное применение тех же входных данных не должно менять состояние: snapshot до и после по матрице пресетов. | draft |
 | DP.MAP.001 | Pack Navigation Map | MAP | — | — |
 | DP.MAP.002 | IWE Service Catalog | MAP | Кросс-системный каталог всех сервисов IWE: сервис → роль → вход → выход → потребитель → исполнитель → триггер | draft |
 | DP.METHOD.010 | Kinds + Owner Roles | METHOD | Формальная процедура старта онтологической работы: сначала определить Kinds (типы сущностей) и Owner Roles (кто source-of-truth), только потом выравнивать лексику. Предотвращает DP.FM.012. | active |
@@ -869,6 +871,7 @@ Manifest updated: /Users/tserentserenov/IWE/PACK-digital-platform/pack/digital-p
 | DP.SOTA.031 | Async Factory Deterministic Pipeline | SOTA | — | draft |
 | DP.SOTA.032 | Semantic Chunking Rag | SOTA | — | draft |
 | DP.SOTA.033 | Flow Engineering (Value Stream Mapping to Action) | SOTA | Пять последовательных карт (результат → текущее состояние → зависимости → будущее состояние → дорожная карта потока), связывающих непонятное текущее состояние потока создания ценности с ясным путём к целевому. Совместные картирующие сессии вместо разрозненных линз. Даёт порядок анализа команды/конвейера, а не набор практик. | active |
+| DP.SOTA.034 | Vite manual chunks — изоляция helper динамических импортов и vendor-ui | SOTA | Явные manual chunks вернули лендингу лёгкий старт: 788 → ~360 КиБ, Lighthouse mobile 71 → 86, FCP 3.6 → 1.8 с. | active |
 | DP.SYS.001 | Детерминированные системы | SYS | Реестр детерминированных подсистем. Перенесено в DS-ecosystem-development → C2.IT-Platform | moved |
 | DP.VM.001 | P1 P9 Calibration Matrix | VM | Девять промежуточных польз новичка: как система засекает достижение каждой (прокси/БД) и как Онбордер ведёт к ней (доставка/предусловие/характеристика Первокурсника/событие тира). | — |
 | DP.WP.001 | Отчёт экстракции | WP | Структурированный отчёт экстракции знаний с классификациями, предложениями и валидацией | draft |
