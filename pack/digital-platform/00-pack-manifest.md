@@ -282,6 +282,7 @@ Manifest updated: /Users/tserentserenov/IWE/PACK-digital-platform/pack/digital-p
 | DP.FM.189 | iOS locale decimal separator: запятая вместо точки в числовых полях | FM | — | draft |
 | DP.FM.190 | Ловушки создания Feature-задачи в YouTrack через API | FM | Два неочевидных ограничения при создании Feature в YouTrack через API: (1) поле Marketing обязательно — без него API молча отказывает; (2) поле Stage игнорирует переданное значение — всегда устанавлив | draft |
 | DP.FM.191 | Swagger/OpenAPI UI закрыт авторизацией на тестовом стенде — агент читает 401 вместо схемы | FM | — | draft |
+| DP.FM.192 | Опциональный компонент не развёрнут — статус «серый», не «жёлтый» | FM | — | draft |
 | DP.IWE.001 | Intellectual Work Environment (IWE) | IWE | IWE — персональная интегрированная среда для интеллектуальной работы. Описывается через 5 архитектурных видов (ISO 42010): системы (U.System), описания (U.Description), роли (U.RoleAssignment), методы (U.MethodDescription), рабочие продукты (U.Work). Триада A.7: Роль → Метод → Рабочий продукт. Позиционирование: почему именно IWE, а не агенты/экзокортекс/FPF по отдельности. | draft |
 | DP.IWE.002 | IWE Template & Setup | IWE | Практическое знание о шаблоне IWE: установка, ежедневная работа (ОРЗ), кастомизация (strategy_day, AUTHOR-ONLY зоны, конфиги), роли, обновление, FAQ. Source-of-truth для бота и MCP. | draft |
 | DP.IWE.003 | Gateway-архитектура IWE | IWE | — | active |
@@ -602,6 +603,8 @@ Manifest updated: /Users/tserentserenov/IWE/PACK-digital-platform/pack/digital-p
 | DP.M.341 | Два независимых таймера сессии: бездействие и абсолютный срок | M | — | draft |
 | DP.M.342 | Login исполнителя — стабильный идентификатор при парсинге трекера | M | При извлечении данных из трекеров (YouTrack, Jira, GitHub) исполнителя задачи идентифицировать по login/username, а не по display name. Display name меняется при переименовании; login остаётся стабиль | draft |
 | DP.M.343 | Сводный чеклист классов багов по предыдущим продуктам линейки | M | Когда несколько продуктов линейки работают на общей кодовой базе — баги в общем коде повторяются. Метод: после закрытия тестирования первого продукта составить список классов (не конкретных тикетов) н | draft |
+| DP.M.344 | FM Epic Agent Pipeline | M | — | draft |
+| DP.M.345 | Decisions Drift Check | M | — | draft |
 | DP.MAP.001 | Pack Navigation Map | MAP | — | — |
 | DP.MAP.002 | IWE Service Catalog | MAP | Кросс-системный каталог всех сервисов IWE: сервис → роль → вход → выход → потребитель → исполнитель → триггер | draft |
 | DP.METHOD.010 | Kinds + Owner Roles | METHOD | Формальная процедура старта онтологической работы: сначала определить Kinds (типы сущностей) и Owner Roles (кто source-of-truth), только потом выравнивать лексику. Предотвращает DP.FM.012. | active |
