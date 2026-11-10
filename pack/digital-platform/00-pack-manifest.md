@@ -283,6 +283,8 @@ Manifest updated: /Users/tserentserenov/IWE/PACK-digital-platform/pack/digital-p
 | DP.FM.190 | Ловушки создания Feature-задачи в YouTrack через API | FM | Два неочевидных ограничения при создании Feature в YouTrack через API: (1) поле Marketing обязательно — без него API молча отказывает; (2) поле Stage игнорирует переданное значение — всегда устанавлив | draft |
 | DP.FM.191 | Swagger/OpenAPI UI закрыт авторизацией на тестовом стенде — агент читает 401 вместо схемы | FM | — | draft |
 | DP.FM.192 | Опциональный компонент не развёрнут — статус «серый», не «жёлтый» | FM | — | draft |
+| DP.FM.193 | WakaTime plugin API-ключ отклоняется на summaries endpoint — требуется OAuth Bearer | FM | — | draft |
+| DP.FM.194 | Windows cp1251-консоль роняет скрипт после успешной записи при выводе многобайтовых символов | FM | — | draft |
 | DP.IWE.001 | Intellectual Work Environment (IWE) | IWE | IWE — персональная интегрированная среда для интеллектуальной работы. Описывается через 5 архитектурных видов (ISO 42010): системы (U.System), описания (U.Description), роли (U.RoleAssignment), методы (U.MethodDescription), рабочие продукты (U.Work). Триада A.7: Роль → Метод → Рабочий продукт. Позиционирование: почему именно IWE, а не агенты/экзокортекс/FPF по отдельности. | draft |
 | DP.IWE.002 | IWE Template & Setup | IWE | Практическое знание о шаблоне IWE: установка, ежедневная работа (ОРЗ), кастомизация (strategy_day, AUTHOR-ONLY зоны, конфиги), роли, обновление, FAQ. Source-of-truth для бота и MCP. | draft |
 | DP.IWE.003 | Gateway-архитектура IWE | IWE | — | active |
